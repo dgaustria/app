@@ -8,7 +8,7 @@ module.exports = {
         .setDMPermission(false)
         .setDefaultMemberPermissions(discordjs.PermissionFlagsBits.MentionEveryone)
         .addSubcommand(builder => builder
-            .setName('projectzomboid')
+            .setName('zomboid')
             .setDescription('Host Project Zomboid')
             .addBooleanOption(bool => bool
                 .setName('clearmods')
@@ -80,6 +80,7 @@ module.exports = {
                 .setRequired(true))),
 	async execute(interaction) {
         const game = interaction.options.getSubcommand();
+
 		await interaction.reply({ content: 'a', ephemeral: appSettings.settings.isHidden.host });
 	},
 };
