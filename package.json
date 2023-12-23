@@ -1,0 +1,25 @@
+{
+  "name": "trucker-discord-bot",
+  "version": "0.1.0",
+  "description": "A discord bot made for a map gamer guild",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "discord.js": "^14.14.1",
+    "dotenv": "^16.3.1"
+  },
+  "engines": {
+    "node": "^21.2.0"
+  },
+  "repository": {
+    "url": "https://github.com/dgaustria/truckerbot.git"
+  },
+  "keywords": [
+    "node",
+    "bot",
+    "discord",
+    "discordjs"
+  ]
+}
