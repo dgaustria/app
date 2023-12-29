@@ -1,4 +1,4 @@
-const gameNames = require('gameNames');
+const gameNames = require('./gameData').gameNames;
 const channels = {};
 
 for (let value in gameNames) {

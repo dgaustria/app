@@ -1,8 +1,7 @@
 const discordjs = require('discord.js');
 const appSettings = require('../../appsettings.json');
-const _gameNames = require('../../store/gameNames');
+const gameNames = require('../../store/gameData').gameNames;
 const channels = require('../../store/channels');
-const gameNames = _gameNames.gameNames;
 
 module.exports = {
 	data: new discordjs.SlashCommandBuilder()
