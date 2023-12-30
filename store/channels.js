@@ -10,7 +10,7 @@ for (let value in gameNames) {
 }
 
 function changeChannelData(game, channelid, property) {
-    if (!channels[game]) throw new Error(game + ' is not in gameNames!');
+    if (!channels[game]) throw new Error(game + ' is not in gameData!');
     if (!channels[game][property]) throw new Error(property + ' is not a property of the channel!');
     channels[game][property] = channelid
 }
